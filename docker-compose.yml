@@ -1,0 +1,26 @@
+version: '2'
+services:
+  db:
+    image: postgres:9.6
+    ports:
+      - '5432:5432'
+    volumes:
+      - 'db:/var/lib/postgresql/data'
+  server:
+    build: .
+    command: bash start.sh
+    volumes:
+      - '.:/enemgo'
+    volumes_from:
+      - gems
+    ports:
+      - '3000:3000'
+      - '8080:8080'
+    depends_on:
+      - db
+  gems:
+    image: busybox
+    volumes:
+      - /enemgo_gems
+volumes:
+  db:
