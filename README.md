@@ -1,4 +1,4 @@
-# EnemGO!
+﻿# EnemGO!
 
 ## Built With
 
@@ -31,3 +31,4 @@
 * Velder Soares
 * Bernardo Rosa
 * Esaú Mascarenhas
+* Resemblinck Freitas
