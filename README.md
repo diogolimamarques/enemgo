@@ -30,3 +30,4 @@
 
 * Velder Soares
 * Bernardo Rosa
+* Esaú Mascarenhas
