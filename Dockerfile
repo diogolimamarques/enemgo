@@ -20,5 +20,6 @@ COPY Gemfile.lock /enemgo/Gemfile.lock
 RUN yarn install
 
 ENV BUNDLE_PATH=/enemgo_gems
+ENV RAILS_ENV=development
 
 COPY . /enemgo
