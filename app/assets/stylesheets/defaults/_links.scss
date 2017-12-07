@@ -1,0 +1,26 @@
+a {
+  color: $primary;
+  transition: .2s linear;
+
+  &:hover,
+  &:focus {
+    color: $clr-text;
+    text-decoration: none;
+    outline: none;
+  }
+
+  &.media {
+    color: $clr-text;
+  }
+
+  &[class*="text-"] {
+    &:hover,
+    &:focus {
+      text-decoration: none;
+    }
+  }
+
+  &[class*="hover-"] {
+    color: $clr-text;
+  }
+}

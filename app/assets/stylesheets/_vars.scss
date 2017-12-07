@@ -1,0 +1,105 @@
+// Fonts
+$font-family-sans-serif: -apple-system, BlinkMacSystemFont, "PT Sans",
+                        "Segoe UI", Arial, sans-serif !default;
+
+// Colors
+$white:    #fff !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #868e96 !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+$black:    #000 !default;
+
+$blue:             #3991ff !default;
+$indigo:           #6610f2 !default;
+$purple:           #7B1FA2 !default;
+$pink:             #e93268 !default;
+$red:              #db2828 !default;
+$orange:           #f2711c !default;
+$yellow:           #fcc525 !default;
+$green:            #21ba45 !default;
+$teal:             #33cabb !default;
+$cyan:             #57c7d4 !default;
+$brown:            #8d6658 !default;
+$dark:             $gray-900 !default;
+
+$gray:             $gray-600 !default;
+$light:            $gray-100 !default;
+
+// Text
+$clr-title:            $purple !default;
+$clr-subtitle:         #999999 !default;
+$clr-text:             #616a78 !default;
+$clr-text-light:       #788394 !default;
+$clr-text-secondary:   #929daf !default;
+$clr-text-placeholder: #c9ccce !default;
+$clr-text-disable:     #a5b3c7 !default;
+
+// defaults
+$primary:          #3afad5  !default;
+$secondary:        #ff3975  !default;
+$success:          $green   !default;
+$info:             $blue    !default;
+$warning:          $orange  !default;
+$danger:           $red     !default;
+
+// Social
+$facebook:         #3b5998 !default;
+$google-plus:      #dd4b39 !default;
+$twitter:          #00aced !default;
+$linkedin:         #007bb6 !default;
+$pinterest:        #cb2027 !default;
+$git:              #666666 !default;
+$tumblr:           #32506d !default;
+$vimeo:            #aad450 !default;
+$youtube:          #bb0000 !default;
+$instagram:        #517fa4 !default;
+
+
+$grays: () !default;
+$grays: map-merge((
+  "100": $gray-100,
+  "200": $gray-200,
+  "300": $gray-300,
+  "400": $gray-400,
+  "500": $gray-500,
+  "600": $gray-600,
+  "700": $gray-700,
+  "800": $gray-800,
+  "900": $gray-900
+), $grays);
+
+$colors: (
+  'primary':   $primary,
+  'secondary': $secondary,
+  'success':   $success,
+  'info':      $info,
+  'warning':   $warning,
+  'danger':    $danger,
+  'pink':      $pink,
+  'purple':    $purple,
+  'brown':     $brown,
+  'cyan':      $cyan,
+  'yellow':    $yellow,
+  'gray':      $gray,
+  'dark':      $dark,
+);
+
+$social-colors: (
+  'facebook':    $facebook,
+  'google':      $google-plus,
+  'twitter':     $twitter,
+  'linkedin':    $linkedin,
+  'pinterest':   $pinterest,
+  'git':         $git,
+  'tumblr':      $tumblr,
+  'vimeo':       $vimeo,
+  'youtube':     $youtube,
+  'instagram':   $instagram,
+
+);
