@@ -1,0 +1,55 @@
+@mixin btn-colors($color, $percent) {
+
+  background-color: $color;
+  border-color: $color;
+  color: #fff;
+
+  &:hover {
+    background-color: lighten($color, $percent);
+    border-color: lighten($color, $percent);
+    color: #fff;
+  }
+
+
+  &:focus,
+  &.focus {
+    color: #fff;
+  }
+
+  &.disabled,
+  &:disabled {
+    background-color: $color;
+    border-color: $color;
+    opacity: 0.5;
+  }
+
+
+  &:active,
+  &.active,
+  .show > &.dropdown-toggle {
+    background-color: darken($color, $percent);
+    border-color: darken($color, $percent);
+    color: #fff;
+  }
+
+}
+
+@mixin btn-outline($color, $percent) {
+  color: $color;
+  background-color: transparent;
+  border-color: $color;
+
+  &:hover  {
+    color: #fff;
+    background-color: $color;
+    border-color: $color;
+  }
+
+  &:active,
+  &.active,
+  .show > &.dropdown-toggle {
+    background-color: darken($color, $percent);
+    border-color: darken($color, $percent);
+  }
+
+}
