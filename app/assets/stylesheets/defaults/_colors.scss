@@ -1,0 +1,52 @@
+// Text colors
+@each $name, $color in $colors {
+  .text-#{$name} {
+    color: $color !important;
+  }
+}
+
+@each $name, $color in $social-colors {
+  .text-#{$name} {
+    color: $color !important;
+  }
+}
+
+.text-default     {color: $clr-text !important;}
+.text-muted       {color: $gray !important;}
+.text-light       {color: $clr-text-light !important;}
+.text-lighter     {color: $clr-text-disable !important;}
+.text-fade        {color: rgba($clr-text, .7) !important;}
+.text-fader       {color: rgba($clr-text, .5) !important;}
+.text-fadest      {color: rgba($clr-text, .4) !important;}
+.text-transparent {color: transparent !important;}
+
+// Hovers link
+a.text-primary    { @include link-colors-important($primary); }
+a.text-secondary  { @include link-colors-important($secondary); }
+a.text-info       { @include link-colors-important($info); }
+a.text-success    { @include link-colors-important($success); }
+a.text-warning   { @include link-colors-important($warning); }
+a.text-danger    { @include link-colors-important($danger); }
+
+// Hover on Hover
+
+@each $name, $color in $colors {
+  .hover-#{$name} {
+    @include link-colors-important($color);
+  }
+}
+
+@each $name, $color in $social-colors {
+  .hover-#{$name} {
+    @include link-colors-important($color);
+  }
+}
+
+.hover-white       { @include link-colors-important(#fff); }
+.hover-muted       { @include link-colors-important($gray); }
+.hover-light       { @include link-colors-important($clr-text-light); }
+.hover-lighter     { @include link-colors-important($clr-text-disable); }
+.hover-transparent { @include link-colors-important(transparent); }
+
+.active.active-white       { background-color: #fff !important; }
+.active.active-transparent { background-color: transparent !important; }
