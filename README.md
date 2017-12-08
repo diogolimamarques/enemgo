@@ -35,4 +35,5 @@
 * Vítor Vaz Andrade
 * Diogo Lima
 * Antonio Raian
+* Eduardo Mendes
 
