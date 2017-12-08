@@ -1,0 +1,42 @@
+<%= form_with(model: simulation, local: true) do |form| %>
+  <% if simulation.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(simulation.errors.count, "error") %> prohibited this simulation from being saved:</h2>
+
+      <ul>
+      <% simulation.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :start_time %>
+    <%= form.datetime_select :start_time, id: :simulation_start_time %>
+  </div>
+
+  <div class="field">
+    <%= form.label :end_time %>
+    <%= form.datetime_select :end_time, id: :simulation_end_time %>
+  </div>
+
+  <div class="field">
+    <%= form.label :user_id %>
+    <%= form.text_field :user_id, id: :simulation_user_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :score %>
+    <%= form.text_field :score, id: :simulation_score %>
+  </div>
+
+  <div class="field">
+    <%= form.label :exam_id %>
+    <%= form.text_field :exam_id, id: :simulation_exam_id %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
